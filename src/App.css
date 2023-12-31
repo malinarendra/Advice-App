@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* main container */
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 0rem;
+}
+
+/* card */
+#main .card {
+    background: rebeccapurple;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#main .card p{
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* button */
+#main button {
+    margin-top: 2rem;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#main button:hover {
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    background-color: white;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:1030px) {
+    #main .card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    #main .card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    #main{
+        margin-top: 14rem;
+    }
+
+    #main .card {
+        width: 80%;
+        padding: 1rem;
+        font-size: 18px;
+    }
+
+    #main button {
+        margin-top: 25px;
+        font-size: 18px;
+        padding: 8px 20px;
+        border-radius: 8px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
